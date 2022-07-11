@@ -2,8 +2,8 @@ const express = require('express')
 const app = express()
 const PORT = 3000
 
-app.get('/', (req, res) => {
-    res.status(200).sendFile('new-public/index.html', { root: __dirname });
+app.get('./new-public', (req,res)=>{
+    res.status(200).render('index.html')
     console.log('index html page was sent to server')
 } )
 
@@ -19,3 +19,7 @@ app.all('*', (req, res) => {
 app.listen(PORT, (req, res) => {
     console.log(`server listening on port ${PORT}...`)
 } )
+
+
+
+

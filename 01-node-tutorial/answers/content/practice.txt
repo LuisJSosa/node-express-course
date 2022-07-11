@@ -1,0 +1,1 @@
+Here is the result: This is the sentence: >> "Sentence from practice 2 file " from user: pncp1
